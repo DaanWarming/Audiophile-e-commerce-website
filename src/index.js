@@ -24,7 +24,11 @@ export default function App() {
 
   useEffect(() => {
     localCart = JSON.parse(localCart)
-    if (localCart) setShoppingCart(localCart)
+    if (localCart === null) {
+      setShoppingCart([])
+    } else {
+      setShoppingCart(localCart)
+    }
   }, []) 
 
   useEffect(() => {
