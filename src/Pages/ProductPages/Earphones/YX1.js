@@ -3,8 +3,7 @@ import ProductPage from "../../../components/ProductPage/ProductPage"
 import ShopLinks from "../../../components/ShopLinks/ShopLinks"
 import AboutUs from "../../../components/AboutUs/AboutUs"
 import Footer from "../../../components/Footer/Footer"
-
-import Data from "../../../starter-code/data.json"
+import Data from "../../../assets/data.json"
 
 
 function YX1() {

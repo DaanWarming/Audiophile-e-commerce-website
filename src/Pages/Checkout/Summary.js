@@ -63,7 +63,7 @@ function Summary({showTanks, setShowThanks}) {
                             <p className={SummaryStyles["summary__total-text"]}>GRAND TOTAL</p>
                             <p className={SummaryStyles["summary__grand-total-price"]}>$ {totalPrice + 50}</p>
                         </div>
-                        <a href="#confirmation" className={SummaryStyles["checkout-link"]} onClick={toggleTanks}>
+                        <a className={SummaryStyles["checkout-link"]} onClick={toggleTanks}>
                             <button className={SummaryStyles["checkout-btn"]}>CONTINUE & PAY</button> 
                         </a>
                     </div>

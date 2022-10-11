@@ -14,16 +14,22 @@ import ZX9 from './Pages/ProductPages/Speakers/ZX9.js';
 import ZX7 from './Pages/ProductPages/Speakers/ZX7.js';
 import YX1 from './Pages/ProductPages/Earphones/YX1.js';
 import Checkout from './Pages/Checkout/Checkout.js';
+import { flushSync } from 'react-dom';
 
 export const ShoppingContext = createContext();
 
 export default function App() {
-  const cartLocalStorage = JSON.parse(localStorage.getItem("shoppingCart"))
-  const [shoppingCart, setShoppingCart] = useState(cartLocalStorage)
+  const [shoppingCart, setShoppingCart] = useState([])
+  let localCart = localStorage.getItem("shoppingCart");
+
+  useEffect(() => {
+    localCart = JSON.parse(localCart)
+    if (localCart) setShoppingCart(localCart)
+  }, []) 
 
   useEffect(() => {
     localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart))
-}, [shoppingCart]) 
+  }, [shoppingCart]) 
 
 
   return (

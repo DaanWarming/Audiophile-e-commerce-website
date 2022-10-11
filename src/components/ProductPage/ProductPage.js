@@ -4,6 +4,8 @@ import ProductPageStyles from "./ProductPage.module.css"
 import { ShoppingContext } from "../../index"
 
 
+
+
 function ProductPage({Data}) {
     const newProduct = Data.new
     const {id, thumbnail, name, description, price, features, includes, abbreviation, slug} = Data
@@ -14,8 +16,8 @@ function ProductPage({Data}) {
     const alsoItemThree = Data.others[2].name
     const alsoLinkThree = "/" + Data.others[2].slug
 
-    const {shoppingCart, setShoppingCart} = useContext(ShoppingContext)
 
+    const {shoppingCart, setShoppingCart} = useContext(ShoppingContext)
     const [productImage, setProductImage] = useState(Data.image.mobile)
     const [galleryOne, setGalleryOne] = useState(Data.gallery.first.mobile)
     const [galleryTwo, setGalleryTwo] = useState(Data.gallery.second.mobile)
