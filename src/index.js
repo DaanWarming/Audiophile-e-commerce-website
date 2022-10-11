@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home.js"
 import HeadPhones from "./Pages/HeadPhones/HeadPhones.js"
 import indexStyles from "../src/index.css"
@@ -27,7 +27,7 @@ export default function App() {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
         <ShoppingContext.Provider value={{shoppingCart, setShoppingCart}}>
         <Routes>
@@ -44,7 +44,7 @@ export default function App() {
           <Route path="Checkout" element={<Checkout />} />
         </Routes>
       </ShoppingContext.Provider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
