@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/DaanWarming/Audiophile-e-commerce-website)
-- Live Site URL: [Add live site URL here](https://daanwarming.github.io/Audiophile-e-commerce-website/)
+- Solution URL: (https://github.com/DaanWarming/Audiophile-e-commerce-website)
+- Live Site URL: (https://daanwarming.github.io/Audiophile-e-commerce-website/)
 
 
 
