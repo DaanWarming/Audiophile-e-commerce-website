@@ -27,7 +27,7 @@ Users should be able to:
 - See correct checkout totals depending on the products in the cart
   - Shipping always adds $50 to the order
 - See an order confirmation modal after checking out with an order summary
-- **Bonus**: Keep track of what's in the cart, even after refreshing the browser (`localStorage` could be used for this if you're not building out a full-stack app)
+- **Bonus**: Keep track of what's in the cart, even after refreshing the browser
 
 
 
