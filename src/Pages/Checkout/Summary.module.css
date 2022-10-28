@@ -107,6 +107,11 @@
     border: none;
 }
 
+.checkout-btn:hover{
+    background-color: #FBAF85;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 600px) {
     
     .summary__title {

@@ -20,6 +20,8 @@ export const ShoppingContext = createContext();
 
 export default function App() {
   const [shoppingCart, setShoppingCart] = useState([])
+  const [showCart, setShowCart] = useState(false)
+  
   let localCart = localStorage.getItem("shoppingCart");
 
   useEffect(() => {
@@ -39,21 +41,21 @@ export default function App() {
   return (
     <HashRouter>
       <ScrollToTop />
-        <ShoppingContext.Provider value={{shoppingCart, setShoppingCart}}>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="HeadPhones" element={<HeadPhones />} />
-          <Route path="Speakers" element={<Speakers />} />
-          <Route path="Earphones" element={<EarPhones />} />
-          <Route path="xx99-mark-two-headphones" element={<XX99Two />} />
-          <Route path="xx99-mark-one-headphones" element={<XX99One />} />
-          <Route path="xx59-headphones" element={<XX59 />} />
-          <Route path="zx9-speaker" element={<ZX9 />} />
-          <Route path="zx7-speaker" element={<ZX7 />} />
-          <Route path="yx1-earphones" element={<YX1 />} />
-          <Route path="Checkout" element={<Checkout />} />
-        </Routes>
-      </ShoppingContext.Provider>
+        <ShoppingContext.Provider value={{shoppingCart, setShoppingCart, showCart, setShowCart}}>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="HeadPhones" element={<HeadPhones />} />
+            <Route path="Speakers" element={<Speakers />} />
+            <Route path="Earphones" element={<EarPhones />} />
+            <Route path="xx99-mark-two-headphones" element={<XX99Two />} />
+            <Route path="xx99-mark-one-headphones" element={<XX99One />} />
+            <Route path="xx59-headphones" element={<XX59 />} />
+            <Route path="zx9-speaker" element={<ZX9 />} />
+            <Route path="zx7-speaker" element={<ZX7 />} />
+            <Route path="yx1-earphones" element={<YX1 />} />
+            <Route path="Checkout" element={<Checkout />} />
+          </Routes>
+        </ShoppingContext.Provider>
     </HashRouter>
   )
 }

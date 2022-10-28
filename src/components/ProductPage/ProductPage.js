@@ -7,6 +7,9 @@ import { ShoppingContext } from "../../index"
 
 
 function ProductPage({Data}) {
+    const {shoppingCart, setShoppingCart} = useContext(ShoppingContext)
+    const {showCart, setShowCart} = useContext(ShoppingContext)
+
     const newProduct = Data.new
     const {id, thumbnail, name, description, price, features, includes, abbreviation, slug} = Data
     const alsoItemOne = Data.others[0].name
@@ -16,8 +19,6 @@ function ProductPage({Data}) {
     const alsoItemThree = Data.others[2].name
     const alsoLinkThree = "/" + Data.others[2].slug
 
-
-    const {shoppingCart, setShoppingCart} = useContext(ShoppingContext)
     const [productImage, setProductImage] = useState(Data.image.mobile)
     const [galleryOne, setGalleryOne] = useState(Data.gallery.first.mobile)
     const [galleryTwo, setGalleryTwo] = useState(Data.gallery.second.mobile)
@@ -33,7 +34,6 @@ function ProductPage({Data}) {
         const {innerWidth} = window;
         return {innerWidth};
     }
-
 
     function changeImage() {
         if (windowSize.innerWidth < 700) {
@@ -114,6 +114,7 @@ function ProductPage({Data}) {
                     }
                 ])
                 checkQuantity()
+                setShowCart(true)
 
         } else if (isInCart) {
             const newShoppingCart = shoppingCart.map(item => { // if item is in cart already change the quantity
@@ -125,6 +126,7 @@ function ProductPage({Data}) {
                 } else return  item
             })
             setShoppingCart(newShoppingCart)
+            setShowCart(true)
             checkQuantity()
 
         } else { // add product to the end of the cart
@@ -139,8 +141,10 @@ function ProductPage({Data}) {
                 }
             ])
             checkQuantity()
+            setShowCart(true)
         }
     }
+
 
 
     // className={ProductPageStyles["header__text--container"]}

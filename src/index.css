@@ -26,7 +26,12 @@ a {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 2px;
-  transition: color 0.2s ;
+  transition: color 0.1s ;
+}
+
+.footer__icon:hover {
+  cursor: pointer;
+  fill: #D87D4A;;
 }
 
 a:hover {
@@ -64,7 +69,8 @@ h1, h2, h3, h4, h5 {
   font-family: 'Manrope';
   font-weight: 700;
   letter-spacing: 1px;
-  transition: background-color 0.2s;
+  transition: background-color 0.15s;
+  user-select: none;
 }
 
 .see-product-btn:hover {
@@ -87,6 +93,10 @@ h1, h2, h3, h4, h5 {
   align-self: flex-start;
   margin-top: 18px;
   margin-bottom: 26px;
+}
+
+.selected {
+  color: #D87D4A;
 }
 
 /* ----- Header section ----- */

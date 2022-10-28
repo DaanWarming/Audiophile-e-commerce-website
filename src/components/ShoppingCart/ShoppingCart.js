@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 
 
-function ShoppingCart({showCart, setShowCart}) {
-    const {shoppingCart, setShoppingCart} = useContext(ShoppingContext)
+function ShoppingCart() {
+    const {shoppingCart, setShoppingCart, showCart, setShowCart} = useContext(ShoppingContext)
     const [totalPrice, setTotalPrice] = useState(0)
     function clearShoppingCart() {
         setShoppingCart([])
@@ -65,6 +65,9 @@ function ShoppingCart({showCart, setShowCart}) {
         totalCost()
     }, [shoppingCart]) 
 
+    function handleClick() {
+        setShowCart(false)
+    }
 // className={ShoppingCartStyles["checkout-link"]}
 
     if (showCart) {
@@ -104,7 +107,7 @@ function ShoppingCart({showCart, setShowCart}) {
                                 <p className={ShoppingCartStyles["cart__total-text"]}>TOTAL</p>
                                 <p className={ShoppingCartStyles["cart__total-price"]}>$ {totalPrice}</p>
                             </div>
-                            <Link to="/Checkout" className={ShoppingCartStyles["checkout-link"]}>
+                            <Link to="/Checkout" className={ShoppingCartStyles["checkout-link"]} onClick={handleClick}>
                                 <button className={ShoppingCartStyles["checkout-btn"]}>Checkout</button> 
                             </Link>
                         </div>
