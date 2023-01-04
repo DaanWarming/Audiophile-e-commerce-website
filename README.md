@@ -1,5 +1,7 @@
 # Audiophile e-commerce website solution
 
+## Live Site URL: [Demo](https://daanwarming.github.io/Audiophile-e-commerce-website/)
+
 This is a solution to the [Audiophile e-commerce website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
@@ -49,7 +51,7 @@ Users should be able to:
 - Flexbox
 - CSS Modules
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- [React](https://reactjs.org/) - React framework
 
 
 ## Author
