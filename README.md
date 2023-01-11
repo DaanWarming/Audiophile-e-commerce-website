@@ -42,7 +42,7 @@ Users should be able to:
 
 - Repository URL: [Repository](https://github.com/DaanWarming/Audiophile-e-commerce-website)
 - Live Site URL: [Demo](https://daanwarming.github.io/Audiophile-e-commerce-website/)
-- Solution URL: [Repository](https://www.frontendmentor.io/solutions/audiophile-e-commerce-website-using-react-VfvKtqMXsY)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/audiophile-e-commerce-website-using-react-VfvKtqMXsY)
 
 
 
@@ -52,7 +52,7 @@ Users should be able to:
 - Flexbox
 - CSS Modules
 - Mobile-first workflow
-- [React](https://reactjs.org/) - React framework
+- [React](https://reactjs.org/)
 
 
 ## Author
