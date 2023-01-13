@@ -1,0 +1,134 @@
+
+
+.summary--container {
+    text-align: start;
+    padding-top: 16px;
+    padding-bottom: 97px;
+    margin-bottom: -120px;
+    background-color: #F2F2F2;
+}
+
+.summary {
+    margin-top: 17px;
+    padding: 24px 7.4%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.summary__title {
+    font-size: 18px;
+    letter-spacing: 1.28571px;
+    margin: 8px 0 31px;
+}
+
+
+
+.summary-content {
+    margin-top: 31px;
+}
+
+.summary-item--container {
+    margin-bottom: 33px;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 24px;
+}
+
+.summary-item__thumb {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+}
+
+.summary-item__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+    margin-left: 16px;
+}
+
+.summary-item__name {
+    font-weight: 700;
+    opacity: 1;
+}
+
+.summary-item__count {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.summary__total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+
+.summary__total-price {
+    font-weight: 700;
+    font-size: 18px;
+    opacity: 1;
+}
+
+.summary__grand-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.summary__grand-total-price {
+    color: #D87D4A;
+    opacity: 1;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.checkout-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0 8px ;
+}
+
+.checkout-btn {
+    width: 100%;
+    height: 48px;
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #D87D4A;
+    border: none;
+}
+
+.checkout-btn:hover{
+    background-color: #FBAF85;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    
+    .summary__title {
+        font-size: 18px;
+        letter-spacing: 1.28571px;
+        margin: 8px 0 31px;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+    .summary--container {
+        padding-top: 80px;
+        width: 32%;
+        padding: 45px 0 0 0;
+        margin-bottom: 0;
+    }
+
+}

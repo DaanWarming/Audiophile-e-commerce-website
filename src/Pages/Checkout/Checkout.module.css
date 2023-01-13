@@ -1,0 +1,10 @@
+
+@media screen and (min-width: 1000px) {
+    .checkout--container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #F2F2F2;
+        padding: 80px 11.8% 141px;
+        margin-bottom: -120px;
+    }
+}

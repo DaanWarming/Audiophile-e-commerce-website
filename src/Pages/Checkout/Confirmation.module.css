@@ -1,0 +1,159 @@
+
+
+.confirmation--container {
+    position: absolute;
+    height: 2000px;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 87.2%;
+    max-width: 540px;
+    min-height: 150px;
+    border-radius: 8px;
+    z-index: 101;
+    margin-top: 5%;
+    text-align: start;
+}
+
+.confirmation__icon {
+    width: 64px;
+    height: 64px;
+    margin: 32px 6.4% 23px;
+}
+
+.confirmation__title {
+    font-size: 24px;
+    letter-spacing: 0.857143px;
+    margin: 0 6.4%;
+    line-height: 28px;
+}
+
+.confirmation__text {
+    margin: 16px 6.4% 24px;
+}
+
+/* ----- Products Section */
+
+.confirmation-item--container {
+    background-color: #F1F1F1;
+    border-radius: 8px 8px 0 0;
+    margin: 0 6.4% -23px;
+    padding: 17px 0 32px;
+}
+
+.confirmation-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 24px 24px;
+}
+
+.confirmation-item:last-child {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 5px;
+}
+
+.confirmation-item__thumb {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+}
+
+.confirmation-item__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+    margin-left: 16px;
+}
+
+.confirmation-item__name {
+    font-weight: 700;
+    opacity: 1;
+}
+
+.confirmation-item__price {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.confirmation-item__count {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+/* ------ Grand Total ------ */
+
+.confirmation__total {
+    height: 92px;
+    background-color: #000000;
+    margin: 0 6.4%;
+    border-radius:  0 0 8px 8px;
+}
+
+.confirmation__total-text {
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0 24px 0;
+    padding-top: 15px;
+}
+
+.confirmation__total-price {
+    font-weight: 700;
+    font-size: 18px;
+    opacity: 1;
+    color: #FFFFFF;
+    margin: 8px 24px 0;
+}
+
+
+/* ----- Back to Home btn ----- */
+
+.checkout-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 23px 6.4% 32px ;
+}
+
+.back-home--btn {
+    width: 100%;
+    height: 48px;
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #D87D4A;
+    border: none;
+}
+
+.back-home--btn:hover{
+    background-color: #FBAF85;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 700px) {
+    
+    .confirmation {
+        padding: 20px;
+    }
+
+    .confirmation__title {
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 1.14286px;
+    }
+
+}

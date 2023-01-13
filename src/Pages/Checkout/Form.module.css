@@ -1,0 +1,113 @@
+
+
+.form--container {
+    text-align: start;
+    padding-top: 17px;
+    background-color: #F2F2F2;
+}
+
+
+.form {
+    margin-top: 26px;
+    padding: 24px 7.4% 7px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.form__title {
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.form__section {
+    margin-top: 11px;
+}
+
+.section__title {
+    letter-spacing: 0.928571px;
+    font-size: 13px;
+    color: #D87D4A;
+    margin-bottom: 20px;
+}
+
+.input--label--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: -0.214286px;
+    margin-bottom: 8px;
+}
+
+.input__text {
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    height: 52px;
+    padding-left: 24px;
+    margin-bottom: 24px;
+}
+
+
+
+.payment--container {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-top: 18px;
+    height: 54px;
+}
+
+.payment-method__text {
+    margin-bottom: 10px;
+}
+
+.payment__text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.25px;
+    margin-left: 16px;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .form--container {
+        padding-top: 49px;
+    }
+    
+    .form__title {
+        font-size: 32px;
+        line-height: 36px;
+        margin-top: 6px;
+        margin-bottom: 44px;
+    }
+
+    .display--flex {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .section__title {
+        margin-top: 32px;
+    }
+
+    .input--label--container {
+        width: 48.5%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .form--container {
+        padding: 0;
+        width: 65.3%;
+    }
+
+    .form {
+        margin-top: 40px;
+        padding: 48px 7.4% 24px;
+    }
+}

@@ -1,0 +1,291 @@
+/* ----- Home Page Products section ----- */
+
+.home__product {
+    margin-bottom: 120px;
+}
+
+
+
+  /* ----- ZX9 SPEAKER ----- */
+
+.product__white-speaker {
+    background-image: url(/src/assets/home/desktop/pattern-circles.svg);
+    background-size: 558px;
+    background-position-x: center;
+    background-position-y: -120px;
+    background-repeat: no-repeat;
+    background-color: #D87D4A;
+    height: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white__image {
+    width: 160px;
+    margin-top: 62px;
+}
+
+.white__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    color: #FFFFFF;
+}
+
+.white__title {
+    font-size: 36px;
+    width: 220px;
+    letter-spacing: 1.28571px;
+    line-height: 40px;
+    margin-top: 39px;
+    margin-bottom: 8px;
+}
+
+.white__text {
+    opacity: 0.75;
+}
+
+.white__button {
+    background-color: #000000;
+    border: 1px solid #000000;
+    margin-top: 9px;
+    padding: 14px 29.5px 14px 31.5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.white__button:hover {
+    background-color: #4C4C4C;
+    border: 1px solid #4C4C4C;
+    color: #FFFFFF;
+}
+
+
+  /* ----- ZX7 SPEAKER ----- */
+
+.product__black-speaker {
+    background-image: url(/src/assets/home/mobile/image-speaker-zx7.jpg);
+    background-position-x: right;
+    background-size: cover;
+    height: 320px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 25.5px;
+    margin: 24px 0;
+}
+
+.black-speaker-title {
+    letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    margin-left: -1.5px;
+}
+
+.black-speaker__button {
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #000000;
+    padding: 14px 29.5px 14px 31.5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 32px;
+    transition: background-color 0.2s;
+}
+
+.black-speaker__button:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+}
+
+
+  /* ----- YX1 EARPHONES ----- */
+
+.earphones__image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    background-image: url(/src/assets/home/mobile/image-earphones-yx1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.earphones__text--container {
+    background-color: #F1F1F1;
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.earphones__title {
+    letter-spacing: 2px;
+    margin: 41px 0 32px 24px;
+}
+
+.earphones__button {
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #000000;
+    padding: 14px 29.5px 14px 31.5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-left: 25.5px;
+}
+
+.earphones__button:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width: 600px) {
+    
+      /* ----- ZX9 SPEAKER ----- */
+
+    .product__white-speaker {
+        height: 720px;
+        background-size: 925px;
+        background-position-y: -270px;
+    }
+    
+    .white__image {
+        width: 183px;
+    }
+
+    .white__text-container {
+        width: 350px;
+    }
+    
+    .white__title {
+        font-size: 56px;
+        width: 320px;
+        letter-spacing: 2px;
+        line-height: 58px;
+        margin-top: 70px;
+        margin-bottom: 24px;
+    }
+    
+    .white__button {
+        margin-top: 40px;
+    }
+
+    /* ----- ZX7 SPEAKER ----- */
+
+    .product__black-speaker {
+        background-image: url(/src/assets/home/tablet/image-speaker-zx7.jpg);
+        padding-left: 62px;
+        margin: 32px 0;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    .home__product {
+        margin-bottom: 96px;
+    }
+    
+       /* ----- YX1 EARPHONES ----- */
+
+    .product__earphones {
+        display: flex;
+        height: 320px;
+        justify-content: space-between;
+    }
+
+    .earphones__image {
+        width: 48.5%;
+        height: 100%;
+        background-image: url(/src/assets/home/tablet/image-earphones-yx1.jpg);
+    }
+
+    .earphones__text--container {
+        width: 48.5%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .earphones__title {
+        margin: 0px 0 32px 41px;
+    }
+
+    .earphones__button {
+        margin-left: 42.5px;
+    }
+}
+
+
+@media screen and (min-width: 1150px) {
+
+    .home__product {
+        margin-top: 100px;
+        margin-bottom: 160px;
+    }
+    
+    /* ----- ZX9 SPEAKER ----- */
+
+    .product__white-speaker {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 560px;
+        background-size: 944px;
+        background-position-y: -40px;
+        background-position-x: -160px;
+        overflow: hidden;
+        padding: 0 95px 0 120px;
+    }
+    
+    .white__image {
+        width: 380px;
+        align-self: flex-end;
+        margin-bottom: -10px;
+    }
+
+    .white__text-container {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -61px;
+        margin-left: 50px;
+    }
+
+    /* ----- ZX7 SPEAKER ----- */
+
+    .product__black-speaker {
+        background-image: url(/src/assets/home/desktop/image-speaker-zx7.jpg);
+        padding-left: 95px;
+        margin: 48px 0;
+    }
+
+    /* ----- YX1 EARPHONES ----- */
+
+    .earphones__image {
+        width: 48.5%;
+        height: 100%;
+        background-image: url(/src/assets/home/desktop/image-earphones-yx1.jpg);
+    }
+
+    .earphones__title {
+        margin: 0px 0 32px 95px;
+    }
+
+    .earphones__button {
+        margin-left: 96.5px;
+    }
+    
+}

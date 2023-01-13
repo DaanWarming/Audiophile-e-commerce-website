@@ -1,0 +1,125 @@
+.shop-links {
+    margin-bottom: 120px;
+    margin-top: 108px;
+}
+
+.shop-links__item {
+    background: #F1F1F1;
+    height: 165px;
+    margin-bottom: 68px;
+    border-radius: 8px;
+}
+
+.shop-links__item--image {
+    margin-top: -52px;
+}
+
+.shop-links__headphones--image {
+    width: 142px;
+    height: auto;
+}
+
+.shop-links__speakers--image {
+    width: 151px;
+    height: auto;
+}
+
+.shop-links__earphones--image {
+    width: 180px;
+    height: auto;
+    margin-top: -52px;
+}
+
+.shop-links__text {
+    opacity: 1;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1.07143px;
+    margin-bottom: 11px;
+}
+
+.shop-links__text--headphones {
+    margin-top: -4px;
+}
+
+.shop-links__text--speakers {
+    margin-top: -8px;
+}
+
+.shop-links__text--earphones {
+    margin-top: -23px;
+}
+
+.shop-links__button {
+    color: #636363;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: color 0.1s;
+}
+
+.shop-links__button:hover {
+    color: #D87D4A;
+}
+
+
+@media screen and (min-width: 600px) {
+    
+    .shop-links {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
+
+    .shop-links__item {
+        width: 32%;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .shop-links {
+        margin-top: 200px;
+        margin-bottom: 28px;
+    }
+    
+    .shop-links__item {
+        height: 204px;
+    }
+
+    
+    .shop-links__headphones--image {
+        width: 220px;
+        margin-top: -80px;
+    }
+    
+    .shop-links__speakers--image {
+        width: 218px;
+        margin-top: -72px;
+    }
+    
+    .shop-links__earphones--image {
+        width: 220px;
+        margin-top: -58px;
+    }
+
+    .shop-links__text {
+        font-size: 18px;
+        letter-spacing: 1.28571px;
+        margin-bottom: 11px;
+    }
+
+    .shop-links__text--headphones {
+        margin-top: -16px;
+    }
+    
+    .shop-links__text--speakers {
+        margin-top: -15px;
+    }
+    
+    .shop-links__text--earphones {
+        margin-top: -17px;
+    }
+
+}

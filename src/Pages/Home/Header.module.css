@@ -1,0 +1,103 @@
+.home__header {
+    background-image: url(/src/assets/home/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 510px;
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -16px;
+}
+
+.header__text {
+    padding-top: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__new-product {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 10px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.28571px;
+    color: #FFFFFF;
+    margin: 14px 0 23px;
+    max-width: 328px;
+}
+
+.header__product-text {
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    opacity: 0.75;
+    margin: 0 0 40px;
+    max-width: 328px;
+}
+
+.header__button {
+    margin-top: -12px;
+}
+
+@media screen and (min-width: 600px) {
+    
+    .home__header {
+        background-image: url(/src/assets/home/tablet/image-header.jpg);
+        height: 639px;
+        margin-bottom: 147px;
+    }
+
+    .header__text {
+        padding-top: 123px;
+    }
+
+    .header__title {
+        font-size: 56px;
+        line-height: 58px;
+        letter-spacing: 2px;
+        max-width: 428px;
+        margin: 21px 0 24px;
+    }
+
+    .header__product-text {
+        max-width: 350px;
+    }
+
+    .header__button {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .home__header {
+        background-image: url(/src/assets/home/desktop/image-hero.jpg);
+        height: 632px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        padding-top: 0px;
+        margin: -34px 0 0 11.8%;
+    }
+
+    .header__title {
+        margin: 21px 0 24px;
+    }
+}
